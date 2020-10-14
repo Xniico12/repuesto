@@ -16,6 +16,7 @@ import  {HttpClientModule} from '@angular/common/http';
 import { RegisterComponent } from './components/register/register.component';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms'
 import { from } from 'rxjs';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { from } from 'rxjs';
     OrdersAutorizationComponent,
     NavbarComponent,
     FooterComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,

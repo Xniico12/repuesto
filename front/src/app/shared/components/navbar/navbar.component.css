@@ -1,0 +1,30 @@
+.nav-bg-color {
+    background: #006D77;
+}
+
+.mat-button,
+.mat-icon-button,
+.mat-stroked-button,
+.mat-flat-button {
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 0px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+}
