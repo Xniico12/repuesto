@@ -8,13 +8,14 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FooterComponent } from './shared/components/footer/footer.component'
 import { OrdersAutorizationComponent } from './components/orders-autorization/orders-autorization.component';
 import { AppointmentComponent } from './components/appointment/appointment.component';
-
+import {MaterialComponent} from './material.component'
 //module
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import  {HttpClientModule} from '@angular/common/http';
 import { RegisterComponent } from './components/register/register.component';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms'
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms'
     AppointmentComponent,
     OrdersAutorizationComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +34,9 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms'
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MaterialComponent,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
