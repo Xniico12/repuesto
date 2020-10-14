@@ -1,0 +1,50 @@
+__tablename__ = "doctor"
+id_d = documento de identidad (String)
+name_d = nombre (String)
+mail_d = correo electronico (String)
+password_d = contrasena (String)
+specialty = especialidad (String)
+phone = telefono (String)
+role_d = rol (String)
+
+__tablename__ = "patient"
+id_p = documento de identidad (String)
+name_p = nombre (String)
+mail_p = correo (String)
+password_p = contrasena (String)
+phone = telefono (String)
+age = edad (int)
+id_family = grupo familiar (String)
+role_p = rol (String)
+id_m = id de la historia clinica (String)
+
+__tablename__ = "family"
+id_f = id grupo familiar (String)
+id_d = documento doctor (String)
+
+__tablename__ = "medicalrecord"
+id_m = id de la historia clinica (String)
+pathologies = patologias del paciente (String)
+
+__tablename__ = "appointment"
+id_a = id de la cita (String)
+id_p = documento del paciente (String)
+id_d = documento del doctor (String)
+date_a = fecha de la cita (date)
+reason = razon o motivo de la cita (String)
+
+__tablename__ = "order"
+id_o = id de la orden generada a partir de la cita (String)
+id_a = id de la cita (String)
+diagnosis = diagnostico (String)
+
+__tablename__ = "authorization"
+id_auth = id de la autorizacion (String)
+id_o = id de la orden (String)
+file_auth = archivo pdf de la autorizacion (local o blob)
+
+__tablename__ = "result"
+id_r = id del resultado de la orden (String)
+id_o = id de la orden (String)
+file_r = archivo pdf con el resultado (local o blob)
+
