@@ -24,6 +24,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthComponent } from './pages/doctor/auth/auth.component';
 import { MedicalrecordComponent } from './pages/doctor/medicalrecord/medicalrecord.component';
 import { AppointComponent } from './pages/doctor/appoint/appoint.component'
+import { LoginComponent } from './forms/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +41,7 @@ import { AppointComponent } from './pages/doctor/appoint/appoint.component'
     AuthComponent,
     MedicalrecordComponent,
     AppointComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
