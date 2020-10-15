@@ -19,7 +19,8 @@ import { AuthorizationComponent } from './ordersAuth/authorization/authorization
 import { PatientComponent } from './pages/patient/patient.component';
 import { DoctorComponent } from './pages/doctor/doctor.component';
 import {CdkTableModule} from '@angular/cdk/table';
-import {OrdersComponent} from './ordersAuth/orders/orders.component'
+import {OrdersComponent} from './ordersAuth/orders/orders.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +44,7 @@ import {OrdersComponent} from './ordersAuth/orders/orders.component'
     ReactiveFormsModule,
     MaterialComponent,
     CdkTableModule,
+    NgbModule,
     
 
   ],
