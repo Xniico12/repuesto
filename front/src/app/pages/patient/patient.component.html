@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
-<div class="container-fluid">
-    <div class="col-md-12 nav-link-wrap">
+<div class="container-fluid justify-content-center" style="margin-top: 10px;">
+    <div class="  col-md-12 nav-link-wrap">
         <div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Ordenes & Autorization</a>
             <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Family </a>
@@ -10,7 +10,7 @@
             <a class="nav-link ftco-animate" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">Doctors</a>
 
             <a class="nav-link ftco-animate" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab" aria-controls="v-pills-5" aria-selected="false">Appoitment</a>
-            <a class="nav-link ftco-animate" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-6" role="tab" aria-controls="v-pills-6" aria-selected="false">Reuslt</a>
+            <a class="nav-link ftco-animate" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-6" role="tab" aria-controls="v-pills-6" aria-selected="false">Result</a>
 
         </div>
         <div class="tab-content bg-light p-4 p-md-5 ftco-animate" id="v-pills-tabContent">
@@ -44,7 +44,7 @@
                         <div class="img d-flex align-self-stretch" style="background-image: url(images/dept-2.jpg);"></div>
                     </div>
                     <div class="col-md-8">
-                        <app-footer></app-footer>
+                        <app-family></app-family>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                         <div class="img d-flex align-self-stretch" style="background-image: url(images/dept-2.jpg);"></div>
                     </div>
                     <div class="col-md-8">
-                        componente subida resultados
+                        <app-medical-r></app-medical-r>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                         <div class="img d-flex align-self-stretch" style="background-image: url(images/dept-2.jpg);"></div>
                     </div>
                     <div class="col-md-8">
-                        Doctors
+                        <app-doctors></app-doctors>
                     </div>
                 </div>
             </div>
@@ -77,18 +77,18 @@
                         <div class="img d-flex align-self-stretch" style="background-image: url(images/dept-2.jpg);"></div>
                     </div>
                     <div class="col-md-8">
-                        Citas
+                        <app-appointments></app-appointments>
                     </div>
                 </div>
             </div>
             <!---component6-->
-            <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-day-5-tab">
+            <div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-day-5-tab">
                 <div class="row departments">
                     <div class="col-lg-4 order-lg-last d-flex align-items-stretch">
                         <div class="img d-flex align-self-stretch" style="background-image: url(images/dept-2.jpg);"></div>
                     </div>
                     <div class="col-md-8">
-                        Citas
+                        result
                     </div>
                 </div>
             </div>

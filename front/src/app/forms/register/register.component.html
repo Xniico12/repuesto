@@ -8,15 +8,15 @@
     <h1>Registro</h1>
     <div class="form-group">
         <mat-form-field class="example-full-width">
-            <mat-label class="text-bold">Nombre</mat-label>
-            <input formControlName="name_c" matInput placeholder="Pepe">
+            <mat-label class="text-bold">Documento</mat-label>
+            <input formControlName="id_p" matInput placeholder="1094970...">
         </mat-form-field>
 
     </div>
     <div class="form-group">
         <mat-form-field class="example-full-width">
-            <mat-label>Email</mat-label>
-            <input matInput placeholder="Pepe@gmail.com" formControlName="email">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="pepe" formControlName="name_p">
         </mat-form-field>
     </div>
     <div class="form-group">
@@ -33,5 +33,18 @@
             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon></button>
         </mat-form-field>
     </div>
+    <div class="form-group">
+        <mat-form-field class="example-full-width">
+            <mat-label>Edad</mat-label>
+            <input matInput placeholder="edad" formControlName="age">
+        </mat-form-field>
+    </div>
+    <div class="form-group">
+        <mat-form-field class="example-full-width">
+            <mat-label>correo</mat-label>
+            <input matInput placeholder="PEPE@gmail.com" formControlName="mail_p">
+        </mat-form-field>
+    </div>
+
     <button mat-raised-button color="primary">Primary</button>
 </form>

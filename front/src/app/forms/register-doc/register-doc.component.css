@@ -1,0 +1,58 @@
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    width: 100%;
+    height: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body {
+    background: linear-gradient(to top, #006D77, #83C5BE);
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.form-style {
+    margin-top: 50px;
+    padding: 25px;
+    padding-left: 50%;
+    padding-right: 50%;
+}
+
+.mat-flat-button.mat-primary,
+.mat-raised-button.mat-primary,
+.mat-fab.mat-primary,
+.mat-mini-fab.mat-primary {
+    background-color: #ac4848;
+    color: floralwhite;
+}
+
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-color: #ac4848!important;
+    background-image: none !important;
+    color: -internal-light-dark(black, white) !important;
+}
+
+.mat-input-element {
+    font: inherit;
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: bottom;
+    text-align: inherit;
+}

@@ -1,0 +1,9 @@
+footer {
+    background: #006D77;
+}
+
+p {
+    margin-bottom: 0px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

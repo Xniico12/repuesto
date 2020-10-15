@@ -1,1 +1,47 @@
-<p>register-doc works!</p>
+<app-navbar></app-navbar>
+
+<body>
+    <div class="container bg-image">
+        <div class="row d-flex justify-content-center">
+            <div class="d-flex justify-content-center bg-color bg-image">
+
+            </div>
+            <div class="d-flex justify-content-center bg-color">
+                <form [formGroup]="form" class="form-style" (ngSubmit)="onSubmit()">
+                    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+
+                    <h1>Registro</h1>
+                    <div class="form-group">
+                        <mat-form-field class="example-full-width">
+                            <mat-label class="text-bold">Nombre</mat-label>
+                            <strong>    <input formControlName="name_c" matInput placeholder="Pepe"></strong>
+                        </mat-form-field>
+
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Email</mat-label>
+                            <input matInput placeholder="Pepe@gmail.com" formControlName="email">
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Telefono</mat-label>
+                            <input matInput placeholder="321-778-1443" formControlName="phone">
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>password</mat-label>
+                            <input formControlName="password" matInput [type]="hide ? 'password' : 'text'">
+                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon></button>
+                        </mat-form-field>
+                    </div>
+                    <button mat-raised-button color="primary">Primary</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<app-footer></app-footer>

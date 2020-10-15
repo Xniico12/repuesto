@@ -25,6 +25,10 @@ import { AuthComponent } from './pages/doctor/auth/auth.component';
 import { MedicalrecordComponent } from './pages/doctor/medicalrecord/medicalrecord.component';
 import { AppointComponent } from './pages/doctor/appoint/appoint.component'
 import { LoginComponent } from './forms/login/login.component';
+import { FamilyComponent } from './components/family/family.component';
+import { MedicalRComponent } from './components/medical-r/medical-r.component';
+import { DoctorsComponent } from './components/doctors/doctors.component';
+import { AppointmentsComponent } from './components/appointments/appointments.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +45,11 @@ import { LoginComponent } from './forms/login/login.component';
     AuthComponent,
     MedicalrecordComponent,
     AppointComponent,
-    LoginComponent
+    LoginComponent,
+    FamilyComponent,
+    MedicalRComponent,
+    DoctorsComponent,
+    AppointmentsComponent
   ],
   imports: [
     BrowserModule,
