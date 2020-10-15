@@ -10,32 +10,44 @@
                 <form [formGroup]="form" class="form-style" (ngSubmit)="onSubmit()">
                     <mat-progress-bar mode="indeterminate"></mat-progress-bar>
 
-                    <h1>Registro</h1>
+                    <h1>Register Doc</h1>
                     <div class="form-group">
                         <mat-form-field class="example-full-width">
-                            <mat-label class="text-bold">Nombre</mat-label>
-                            <strong>    <input formControlName="name_c" matInput placeholder="Pepe"></strong>
+                            <mat-label class="text-bold">Name</mat-label>
+                            <strong>    <input formControlName="id_d" matInput placeholder="1094"></strong>
                         </mat-form-field>
 
                     </div>
                     <div class="form-group">
                         <mat-form-field class="example-full-width">
-                            <mat-label>Email</mat-label>
-                            <input matInput placeholder="Pepe@gmail.com" formControlName="email">
+                            <mat-label>Phone</mat-label>
+                            <input matInput placeholder="Pepe" formControlName="name_d">
                         </mat-form-field>
                     </div>
                     <div class="form-group">
                         <mat-form-field class="example-full-width">
-                            <mat-label>Telefono</mat-label>
+                            <mat-label>Email</mat-label>
+                            <input matInput placeholder="Pepe@gmail.com" formControlName="mail_d">
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Phone</mat-label>
                             <input matInput placeholder="321-778-1443" formControlName="phone">
                         </mat-form-field>
                     </div>
                     <div class="form-group">
                         <mat-form-field class="example-full-width">
                             <mat-label>password</mat-label>
-                            <input formControlName="password" matInput [type]="hide ? 'password' : 'text'">
+                            <input formControlName="password_d" matInput [type]="hide ? 'password' : 'text'">
                             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon></button>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Specialty</mat-label>
+                            <input matInput placeholder="Cardiology" formControlName="especialty">
                         </mat-form-field>
                     </div>
                     <button mat-raised-button color="primary">Primary</button>

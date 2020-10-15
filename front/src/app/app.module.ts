@@ -29,6 +29,7 @@ import { FamilyComponent } from './components/family/family.component';
 import { MedicalRComponent } from './components/medical-r/medical-r.component';
 import { DoctorsComponent } from './components/doctors/doctors.component';
 import { AppointmentsComponent } from './components/appointments/appointments.component';
+import { PatientsComponent } from './pages/doctor/patients/patients.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +50,8 @@ import { AppointmentsComponent } from './components/appointments/appointments.co
     FamilyComponent,
     MedicalRComponent,
     DoctorsComponent,
-    AppointmentsComponent
+    AppointmentsComponent,
+    PatientsComponent
   ],
   imports: [
     BrowserModule,

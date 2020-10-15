@@ -21,23 +21,31 @@ export class RegisterDocComponent implements OnInit {
       this.route.navigate['/'];
     }
     this.form = this.fb.group({
-      name_c: ['', Validators.required],
-      email: ['', [Validators.email, Validators.required]],
+      id_d: ['', Validators.required],
+      name_d: ['',  Validators.required],
+      mail_d: ['', Validators.required],
+      specialty: ['', Validators.required],
       phone: ['', Validators.required],
-      password: ['', Validators.required],
+      password_d:['',Validators.required],
+
+
     })
   }
 
   async onSubmit(){
     // Se recupera el token
     if (this.form.valid){
+      console.log(this.form);
       this.client.postRequest(
-        'http://127.0.0.1:5000/api/v01/register',
+        'http://127.0.0.1:5000/api/register',
         {
-          name_c : this.form.value.name_c,
-          email: this.form.value.email,
+          id_d: this.form.value.id_d,
+          name_d: this.form.value.name_d,
+          mail_d: this.form.value.mail_d,
+          specialty: this.form.value.specialty,
           phone: this.form.value.phone,
-          password: this.form.value.password,
+          password_d: this.form.value.Password_d,
+          role_d: "2"
         },
         // Se envia el token
       ).subscribe(
