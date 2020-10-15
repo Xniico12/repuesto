@@ -20,7 +20,10 @@ import { PatientComponent } from './pages/patient/patient.component';
 import { DoctorComponent } from './pages/doctor/doctor.component';
 import {CdkTableModule} from '@angular/cdk/table';
 import {OrdersComponent} from './ordersAuth/orders/orders.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AuthComponent } from './pages/doctor/auth/auth.component';
+import { MedicalrecordComponent } from './pages/doctor/medicalrecord/medicalrecord.component';
+import { AppointComponent } from './pages/doctor/appoint/appoint.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +37,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     PatientComponent,
     DoctorComponent,
     OrdersComponent,
+    AuthComponent,
+    MedicalrecordComponent,
+    AppointComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableModule} from '@angular/material/table';
 import {CdkTableModule} from '@angular/cdk/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
 @NgModule ({
     imports: [
     MatMenuModule,
@@ -19,6 +21,8 @@ import {CdkTableModule} from '@angular/cdk/table';
     MatPaginatorModule,
     MatTableModule,
     CdkTableModule,
+    MatFormFieldModule,
+    MatSelectModule
     ],
     exports: [
         MatMenuModule,
@@ -30,6 +34,8 @@ import {CdkTableModule} from '@angular/cdk/table';
         MatPaginatorModule,
         MatTableModule,
         CdkTableModule,
+        MatFormFieldModule,
+        MatSelectModule
     ]
 })
 export class MaterialComponent {}

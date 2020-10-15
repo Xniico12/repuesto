@@ -1,56 +1,37 @@
-<form class="appointment-form ftco-animate">
-    <div class="d-md-flex">
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Nombre">
-        </div>
-        <div class="form-group ml-md-4">
-            <input type="text" class="form-control" placeholder="Apellido">
-        </div>
+<form [formGroup]="form" class="form-style" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+
+
     </div>
-    <div class="d-md-flex">
-        <div class="form-group">
-            <div class="form-field">
-                <div class="select-wrap">
-                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                    <select name="" id="" class="form-control">
-                      	<option value="">Selecciona tu Servicio</option>
-                        <option value="">Neurologia</option>
-                        <option value="">Cardiologia</option>
-                        <option value="">Odontologia</option>
-                        <option value="">Oftamologia</option>
-                        <option value="">Medicina General</option>
-                      </select>
-                </div>
-            </div>
-        </div>
-        <div class="form-group ml-md-4">
-            <input type="text" class="form-control" placeholder="Telefono">
-        </div>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+
+    <h1>Registro</h1>
+    <div class="form-group">
+        <mat-form-field class="example-full-width">
+            <mat-label class="text-bold">Nombre</mat-label>
+            <input formControlName="name_c" matInput placeholder="Pepe">
+        </mat-form-field>
+
     </div>
-    <div class="d-md-flex">
-        <div class="form-group">
-            <div class="input-wrap">
-                <div class="icon"><span class="ion-md-calendar"></span></div>
-                <input type="date" class="form-control appointment_date" placeholder="Fecha">
-            </div>
-        </div>
-        <div class="form-group ml-md-4">
-            <div class="input-wrap">
-                <div class="icon"><span class="ion-ios-clock"></span></div>
-                <input type="text" class="form-control appointment_time" placeholder="Time">
-            </div>
-        </div>
+    <div class="form-group">
+        <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Pepe@gmail.com" formControlName="email">
+        </mat-form-field>
     </div>
-    <div class="d-md-flex">
-        <div class="form-group">
-            <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
-        </div>
-        <div class="form-group ml-md-4">
-            <div class="input-wrap">
-                <div class="icon"><span class="ion-ios-clock"></span></div>
-                <input type="text" class="form-control appointment_time" placeholder="Time">
-            </div>
-        </div>
-        <button mat-flat-button color="primary" type="button" (click)="getDatos()">Primary</button>
+    <div class="form-group">
+        <mat-form-field class="example-full-width">
+            <mat-label>Telefono</mat-label>
+            <input matInput placeholder="321-778-1443" formControlName="phone">
+        </mat-form-field>
     </div>
+    <div class="form-group">
+        <mat-form-field class="example-full-width">
+            <mat-label>password</mat-label>
+            <input formControlName="password" matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon></button>
+        </mat-form-field>
+    </div>
+    <button mat-raised-button color="primary">Primary</button>
 </form>
