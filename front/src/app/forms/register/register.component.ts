@@ -30,7 +30,9 @@ export class RegisterComponent implements OnInit {
 
     })
   }
-
+register(){
+  this.route.navigate(['/login'])
+}
   async onSubmit(){
     // Se recupera el token
     if (this.form.valid){

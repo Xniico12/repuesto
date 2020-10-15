@@ -24,6 +24,18 @@ form: FormGroup;
       password: ['', Validators.required]
     });
   }
+  KEY_TOKEN_AUTH = 'WJgeLC39pQcPtQ3A42V7LeXABh-klwhXlMhWufr0KBZdjoXu5L1ZoaK7F7t_1QhfButEXjLsLqWRXPcYwT0fyzkKYlp2aP2-oBmtFDfpSNe6SWFA1i9ytrDAgm-N0AJiLK8rcg'
+
+  prueba(){
+    if(this.form.value.password==='1'){
+    this.route.navigate(['/patient'])
+    localStorage.setItem('token',this.KEY_TOKEN_AUTH);
+    this.auth.setCourrentUser('nicolas')
+    }else{
+    this.route.navigate(['/'])
+
+    }
+  }
   // tslint:disable-next-line: typedef
   async onSubmit() {
 
